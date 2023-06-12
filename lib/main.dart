@@ -25,7 +25,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'form/home_form.dart';
 import 'themes/themesMode.dart';
 import 'locale/locale.dart';
-import 'view/test_view.dart';
+import 'view/testViews/test_2_view.dart';
+import 'view/testViews/test_view.dart';
 
 
 
@@ -77,7 +78,7 @@ class MyApp extends StatelessWidget {
       // locale: controller.initialLocale, // = to take locate which i chosse
       initialBinding: InitailBaindings(),
       translations: MyLocale(),     //= locale clase
-      home: TestView(),
+      home: formone(),
       // getPages: AppPage.routes,
       // initialRoute: AppPage.getlogin(),
        
