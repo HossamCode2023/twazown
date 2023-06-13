@@ -1,8 +1,10 @@
+// ignore_for_file: avoid_print
+
 import 'package:get/get.dart';
 import 'package:myapp/api/class/status_request.dart';
 
-import '../api/gold_services.dart';
-import '../data/model/test_model.dart';
+import 'gold_services.dart';
+import 'test_model.dart';
 
 class TestPostController extends GetxController 
 
@@ -18,7 +20,7 @@ class TestPostController extends GetxController
 
 
   Map<String, String>? headers = {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json; charset=UTF-8',
         
          
         };

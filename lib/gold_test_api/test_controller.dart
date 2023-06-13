@@ -6,12 +6,12 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:myapp/data/dataResoures/remote/test_data.dart';
-import 'package:myapp/data/model/form1_model.dart';
+import 'package:myapp/api/data/dataResoures/remote/test_data.dart';
+import 'package:myapp/gold_test_api/form1_model.dart';
 
 import '../api/class/status_request.dart';
 import '../api/functions/handling_data_controller.dart';
-import '../api/gold_model.dart';
+import 'gold_model.dart';
 
 class TestController extends GetxController {
   //  TextEditingController textField1 =  TextEditingController();

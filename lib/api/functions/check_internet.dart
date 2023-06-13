@@ -3,6 +3,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 checkInternet()async
 {
@@ -20,7 +21,10 @@ if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
 
 
 }on SocketException catch (e) {
- 
+  Get.snackbar('Error', 'No internet connection',
+          snackPosition: SnackPosition.BOTTOM,
+          backgroundColor: Colors.red,
+          colorText: Colors.white);
   print('=============== Check Internet ==========================');
   print(e);
   print('=============== Check Internet ==========================');

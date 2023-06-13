@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/api/class/handling_data_view.dart';
-import 'package:myapp/controller/test_post_controller.dart';
+import 'package:myapp/gold_test_api/test_post_controller.dart';
 
 
 class TestPostView extends StatelessWidget {

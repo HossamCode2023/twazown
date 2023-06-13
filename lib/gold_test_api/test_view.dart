@@ -5,9 +5,9 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 import 'package:myapp/api/class/handling_data_view.dart';
 import 'package:myapp/api/class/status_request.dart';
-import 'package:myapp/controller/test_controller.dart';
+import 'package:myapp/gold_test_api/test_controller.dart';
 
-import '../../api/gold_controller.dart';
+import 'gold_controller.dart';
 
 class TestView extends StatelessWidget {
   const TestView({super.key});

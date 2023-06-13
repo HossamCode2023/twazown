@@ -4,7 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:myapp/api/gold-home.dart';
+import 'package:myapp/gold_test_api/gold-home.dart';
 import 'package:myapp/bindings/initail_Bindings.dart';
 import 'package:myapp/locale/locale_controller.dart';
 import 'package:myapp/routes/routes.dart';
@@ -22,12 +22,12 @@ import 'package:myapp/view/pages/review/trainerDetailPage.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:responsive_framework/utils/scroll_behavior.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'form/home_form.dart';
+import 'gold_test_api/home_form.dart';
 import 'themes/themesMode.dart';
 import 'locale/locale.dart';
-import 'view/testViews/test_2_view.dart';
-import 'view/testViews/test_view.dart';
-import 'view/test_post_view.dart';
+import 'gold_test_api/test_2_view.dart';
+import 'gold_test_api/test_view.dart';
+import 'gold_test_api/test_post_view.dart';
 
 
 
@@ -79,7 +79,7 @@ class MyApp extends StatelessWidget {
       // locale: controller.initialLocale, // = to take locate which i chosse
       initialBinding: InitailBaindings(),
       translations: MyLocale(),     //= locale clase
-      home: formone(),
+      home: HomeScreen(),
       // getPages: AppPage.routes,
       // initialRoute: AppPage.getlogin(),
        

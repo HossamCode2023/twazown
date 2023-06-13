@@ -2,7 +2,8 @@
 
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
-import 'class/status_request.dart';
+import 'package:myapp/api/functions/check_internet.dart';
+import '../api/class/status_request.dart';
 import 'gold_model.dart';
 import 'gold_services.dart';
 import 'silver_model.dart';
@@ -14,6 +15,7 @@ class GoldController extends GetxController{
   void onInit() {
     fetchGoldData();
     fetchSilverData();
+    checkInternet();
     super.onInit();
   }
    GoldPrice? goldPrice;

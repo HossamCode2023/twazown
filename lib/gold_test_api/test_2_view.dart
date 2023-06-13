@@ -1,10 +1,12 @@
+// ignore_for_file: camel_case_types, non_constant_identifier_names
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:myapp/controller/test_controller.dart';
+import 'package:myapp/gold_test_api/test_controller.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:myapp/data/model/form1_model.dart';
+import 'package:myapp/gold_test_api/form1_model.dart';
 
 class formone extends StatelessWidget {
   const formone({super.key});
@@ -50,6 +52,7 @@ class formone extends StatelessWidget {
                   ),
                    
             const SizedBox(height: 20),
+            //================= select image ====================
             Obx(() => controller.selectedImageBath.value == ''
             ?const Text('Selected image from camera/galery')
             :SizedBox(

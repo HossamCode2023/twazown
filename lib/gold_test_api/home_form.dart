@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:myapp/form/model_form.dart';
+import 'package:myapp/gold_test_api/model_form.dart';
 
 import 'controller_form.dart';
 

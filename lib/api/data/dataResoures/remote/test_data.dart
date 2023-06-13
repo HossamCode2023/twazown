@@ -1,5 +1,5 @@
 import 'package:myapp/api/class/crud.dart';
-import 'package:myapp/api/link_api.dart';
+import 'package:myapp/api/link/link_api.dart';
 
 class TestGoldData {
   Crud crud;
