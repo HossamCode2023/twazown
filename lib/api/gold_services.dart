@@ -27,7 +27,7 @@ static Future<Map<dynamic, dynamic>> postRequest(String url, Map map , Map<Strin
     try {
       var response =
           await http.post(Uri.parse(url), body: json.encode(map), headers: headers);
-      if (response.statusCode == 200) {
+      if (response.statusCode == 200 || response.statusCode == 201) {
         var responsebody = jsonDecode(response.body);
         return responsebody;
       } else {

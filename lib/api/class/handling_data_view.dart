@@ -1,7 +1,7 @@
 // ignore_for_file: unused_import, implementation_imports
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+// import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:myapp/api/class/status_request.dart';
 
 class HandlingDataView extends StatelessWidget {

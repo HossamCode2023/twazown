@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/controller/test_controller.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:myapp/data/model/form1_model.dart';
 
 class formone extends StatelessWidget {
   const formone({super.key});
@@ -18,22 +19,24 @@ class formone extends StatelessWidget {
                 children: [
                   //pass all arguments you want
                   TextField(
-                    controller: controller.textField1,
+                    controller: controller.text1,
                   ),
                   Checkbox(
-                    value: controller.checkBoxValue,
+                    value: controller.value,
                     onChanged: (val) {
-                      controller.checkBoxValue = val!;
+                      controller.value = val!;
+                      controller.update();
                     },
                   ),
-                  // () {
-                      // controller.sendtoapi(form1Model(
-                      //     text: controller.text1.text,
-                      //     value: controller.value));
-                    // },
+                  
                   InkWell(
-                    onTap: (){
-                      controller.onChenge();
+                    onTap: () {
+                      controller.sendtoapi(form1Model(
+                          text: controller.text1.text,
+                          value: controller.value,
+                          image:controller.selectedImageBath.value.toString(),
+                          ),
+                          );
                     },
                     child: Container(
                         height: 50,

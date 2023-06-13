@@ -2,11 +2,13 @@
 
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
+import 'class/status_request.dart';
 import 'gold_model.dart';
 import 'gold_services.dart';
 import 'silver_model.dart';
 
 class GoldController extends GetxController{
+  late final StatusRequest statusRequest;
 
   @override
   void onInit() {

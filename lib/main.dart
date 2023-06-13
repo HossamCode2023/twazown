@@ -27,6 +27,7 @@ import 'themes/themesMode.dart';
 import 'locale/locale.dart';
 import 'view/testViews/test_2_view.dart';
 import 'view/testViews/test_view.dart';
+import 'view/test_post_view.dart';
 
 
 
